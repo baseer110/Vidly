@@ -227,6 +227,16 @@
     <Compile Include="Migrations\201910170215179_MembershipTypeName.Designer.cs">
       <DependentUpon>201910170215179_MembershipTypeName.cs</DependentUpon>
     </Compile>
+
+    <Compile Include="Migrations\201910170238215_addDateOfBirthColumnInCustomer.cs" />
+    <Compile Include="Migrations\201910170238215_addDateOfBirthColumnInCustomer.Designer.cs">
+      <DependentUpon>201910170238215_addDateOfBirthColumnInCustomer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201910271958270_AddingGenraTableAndAddingColumnsInMoviesTable.cs" />
+    <Compile Include="Migrations\201910271958270_AddingGenraTableAndAddingColumnsInMoviesTable.Designer.cs">
+      <DependentUpon>201910271958270_AddingGenraTableAndAddingColumnsInMoviesTable.cs</DependentUpon>
+    </Compile>
+
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Customer.cs" />
@@ -344,6 +354,13 @@
     <EmbeddedResource Include="Migrations\201910170215179_MembershipTypeName.resx">
       <DependentUpon>201910170215179_MembershipTypeName.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201910170238215_addDateOfBirthColumnInCustomer.resx">
+      <DependentUpon>201910170238215_addDateOfBirthColumnInCustomer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201910271958270_AddingGenraTableAndAddingColumnsInMoviesTable.resx">
+      <DependentUpon>201910271958270_AddingGenraTableAndAddingColumnsInMoviesTable.cs</DependentUpon>
+    </EmbeddedResource>
+
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
