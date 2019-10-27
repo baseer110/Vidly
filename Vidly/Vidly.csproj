@@ -227,7 +227,6 @@
     <Compile Include="Migrations\201910170215179_MembershipTypeName.Designer.cs">
       <DependentUpon>201910170215179_MembershipTypeName.cs</DependentUpon>
     </Compile>
-
     <Compile Include="Migrations\201910170238215_addDateOfBirthColumnInCustomer.cs" />
     <Compile Include="Migrations\201910170238215_addDateOfBirthColumnInCustomer.Designer.cs">
       <DependentUpon>201910170238215_addDateOfBirthColumnInCustomer.cs</DependentUpon>
@@ -236,10 +235,30 @@
     <Compile Include="Migrations\201910271958270_AddingGenraTableAndAddingColumnsInMoviesTable.Designer.cs">
       <DependentUpon>201910271958270_AddingGenraTableAndAddingColumnsInMoviesTable.cs</DependentUpon>
     </Compile>
-
+    <Compile Include="Migrations\201910272027172_AddedGenreTable.cs" />
+    <Compile Include="Migrations\201910272027172_AddedGenreTable.Designer.cs">
+      <DependentUpon>201910272027172_AddedGenreTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201910272028493_PopulateGenreTable.cs" />
+    <Compile Include="Migrations\201910272028493_PopulateGenreTable.Designer.cs">
+      <DependentUpon>201910272028493_PopulateGenreTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201910272054103_AddMoreItemsInGenresTable.cs" />
+    <Compile Include="Migrations\201910272054103_AddMoreItemsInGenresTable.Designer.cs">
+      <DependentUpon>201910272054103_AddMoreItemsInGenresTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201910272131098_AddReleaseDateInMovieTable.cs" />
+    <Compile Include="Migrations\201910272131098_AddReleaseDateInMovieTable.Designer.cs">
+      <DependentUpon>201910272131098_AddReleaseDateInMovieTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201910272139308_AddReleaseDateInMovieTableNullableDate.cs" />
+    <Compile Include="Migrations\201910272139308_AddReleaseDateInMovieTableNullableDate.Designer.cs">
+      <DependentUpon>201910272139308_AddReleaseDateInMovieTableNullableDate.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Customer.cs" />
+    <Compile Include="Models\Genres.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Models\MembershipType.cs" />
@@ -323,6 +342,7 @@
     <Content Include="Views\Customers\Details.cshtml" />
     <Content Include="Views\Customers\Index.cshtml" />
     <Content Include="Views\Movie\Index.cshtml" />
+    <Content Include="Views\Movie\Details.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -360,7 +380,21 @@
     <EmbeddedResource Include="Migrations\201910271958270_AddingGenraTableAndAddingColumnsInMoviesTable.resx">
       <DependentUpon>201910271958270_AddingGenraTableAndAddingColumnsInMoviesTable.cs</DependentUpon>
     </EmbeddedResource>
-
+    <EmbeddedResource Include="Migrations\201910272027172_AddedGenreTable.resx">
+      <DependentUpon>201910272027172_AddedGenreTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201910272028493_PopulateGenreTable.resx">
+      <DependentUpon>201910272028493_PopulateGenreTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201910272054103_AddMoreItemsInGenresTable.resx">
+      <DependentUpon>201910272054103_AddMoreItemsInGenresTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201910272131098_AddReleaseDateInMovieTable.resx">
+      <DependentUpon>201910272131098_AddReleaseDateInMovieTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201910272139308_AddReleaseDateInMovieTableNullableDate.resx">
+      <DependentUpon>201910272139308_AddReleaseDateInMovieTableNullableDate.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
