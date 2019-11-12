@@ -255,6 +255,18 @@
     <Compile Include="Migrations\201910272139308_AddReleaseDateInMovieTableNullableDate.Designer.cs">
       <DependentUpon>201910272139308_AddReleaseDateInMovieTableNullableDate.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201911120227160_ChangeReleaseDateFormatInMovie.cs" />
+    <Compile Include="Migrations\201911120227160_ChangeReleaseDateFormatInMovie.Designer.cs">
+      <DependentUpon>201911120227160_ChangeReleaseDateFormatInMovie.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201911120233506_ChangeAddedDateFormatInMovie.cs" />
+    <Compile Include="Migrations\201911120233506_ChangeAddedDateFormatInMovie.Designer.cs">
+      <DependentUpon>201911120233506_ChangeAddedDateFormatInMovie.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201911120253386_ChangeGenreDatatypeInMovie.cs" />
+    <Compile Include="Migrations\201911120253386_ChangeGenreDatatypeInMovie.Designer.cs">
+      <DependentUpon>201911120253386_ChangeGenreDatatypeInMovie.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Customer.cs" />
@@ -270,6 +282,8 @@
       <DependentUpon>Settings.settings</DependentUpon>
     </Compile>
     <Compile Include="Startup.cs" />
+    <Compile Include="ViewModel\CustomerFormViewModel.cs" />
+    <Compile Include="ViewModel\MovieFormViewModel.cs" />
     <Compile Include="ViewModel\RandomMovieViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -343,6 +357,8 @@
     <Content Include="Views\Customers\Index.cshtml" />
     <Content Include="Views\Movie\Index.cshtml" />
     <Content Include="Views\Movie\Details.cshtml" />
+    <Content Include="Views\Customers\CustomerForm.cshtml" />
+    <Content Include="Views\Movie\MovieForm.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -394,6 +410,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201910272139308_AddReleaseDateInMovieTableNullableDate.resx">
       <DependentUpon>201910272139308_AddReleaseDateInMovieTableNullableDate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201911120227160_ChangeReleaseDateFormatInMovie.resx">
+      <DependentUpon>201911120227160_ChangeReleaseDateFormatInMovie.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201911120233506_ChangeAddedDateFormatInMovie.resx">
+      <DependentUpon>201911120233506_ChangeAddedDateFormatInMovie.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201911120253386_ChangeGenreDatatypeInMovie.resx">
+      <DependentUpon>201911120253386_ChangeGenreDatatypeInMovie.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
