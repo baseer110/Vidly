@@ -44,14 +44,28 @@ namespace Vidly.Controllers
             var membershipTypes = _context.MembershipType.ToList();
             var viewModel = new CustomerFormViewModel
             {
+                Customer = new Customer(),
                 MembershipTypes = membershipTypes
             };
             return View("CustomerForm", viewModel);
         }
 
         [HttpPost]
+        [ValidateAntiForgeryToken]
         public ActionResult Save(Customer customer)
         {
+            //#TODO Need to check this check as I am unable to add customer
+            if(!ModelState.IsValid)
+            {
+                var membershipTypes = _context.MembershipType.ToList();
+                var viewModel = new CustomerFormViewModel
+                {
+                    MembershipTypes = membershipTypes,
+                    Customer = customer
+                };
+                return View("CustomerForm", viewModel);
+            }
+
             if (customer.Id == 0)
             {
                 _context.Customers.Add(customer);
